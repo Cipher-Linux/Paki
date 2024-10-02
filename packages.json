@@ -1,0 +1,19 @@
+{
+    "make": [
+        "make-4.4.tar.gz",
+        "make-4.4",
+        "make-4.4.sh",
+        "./installed/make-4.4.sh"
+    ],
+    "bash": [
+        "bash-5.2.tar.gz",
+        "bash-5.2"
+    ],
+    "neofetch": [
+        "neofetch-7.1.0.tar.gz",
+        "neofetch-7.1.0",
+        "neofetch-7.1.0.sh",
+        "./installed/neofetch-7.1.0.sh",
+	    "neofetch-7.1.0-uninstall.sh"
+    ]
+}
