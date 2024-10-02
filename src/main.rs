@@ -44,7 +44,7 @@ fn install_package(args: &Vec<String>) -> io::Result<()> {
         if !installed.contains(package_name) {
             let package_name_str = packages[package_name][0].to_string();
             let package_name_str = package_name_str.trim_matches('"').to_string();
-            let url = format!("https://raw.githubusercontent.com/Cipher-Linux/cr/main/packages/{}", package_name_str);
+            let url = format!("https://raw.githubusercontent.com/Cipher-Linux/cpr/main/packages/{}", package_name_str);
             let mut child = Command::new("wget")
                 .arg(url)
                 .arg("--directory-prefix=./installed")
@@ -54,7 +54,7 @@ fn install_package(args: &Vec<String>) -> io::Result<()> {
             let package_bash_str = package_bash_str.trim_matches('"').to_string();
             let pkg_bash_sh = packages[package_name][3].to_string();
             let pkg_bash_sh = pkg_bash_sh.trim_matches('"').to_string();
-            let shurl = format!("https://raw.githubusercontent.com/Cipher-Linux/cr/main/packages/{}", package_bash_str);
+            let shurl = format!("https://raw.githubusercontent.com/Cipher-Linux/cpr/main/packages/{}", package_bash_str);
             let mut child2 = Command::new("wget")
                 .arg(shurl)
                 .arg("--directory-prefix=./installed")
